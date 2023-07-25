@@ -1,0 +1,384 @@
+:root {
+    --primary-color: #FF0000;
+    --secondary-color: #4A4A4A;
+    --tertiary-color: #000000;
+    --additional-color: #FFFFFF;
+}
+
+@media only screen and (max-width:1116px) {
+
+    .email-description .heading {
+        margin-bottom: -20px;
+        font-size: 28px;
+    }
+    .email-description .sub-heading {
+        font-size: 20px;
+      }
+
+      .email-us-form form #fname {
+        height: 50px;
+        margin-bottom: -20px;
+
+      }
+
+      .email-us-form form #email {
+        height: 50px;
+        margin-bottom: -20px;
+      }
+
+      .email-us-form form #message {
+        height: 150px;
+        margin-bottom: -20px;
+      }
+}
+
+@media only screen and (max-width:1360px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .about-us-img img {
+        min-height: 800px;
+    }
+
+}
+
+@media only screen and (max-width:1150px) {
+    .about-us {
+        padding: 60px;
+    }
+    .about-us-description {
+        width: 60%;
+        padding: 30px;
+    }
+    .heading {
+        font-size: 35px;
+    }
+    .about-us-img img {
+        min-height: 750px;
+    }
+}
+
+
+@media only screen and (max-width:1160px) { 
+    .nav-links li a {
+        font-size: 13px;
+    }
+
+    .nav-logo p {
+        font-size: 25px;
+    }
+
+    .nav-button a {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        width: 75%;
+    }
+
+    .team-name {
+        font-size: 25px;
+    }
+}
+
+
+
+@media only screen and (max-width:900px) {
+
+    .container-fluid { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger { 
+        display: block;
+
+    }
+
+    .hamburger .line {
+        height: 3px;
+        width: 30px;
+        background-color: var(--secondary-color);
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .nav-links { 
+        position: absolute;
+        top: 79px;
+        left: 0;
+        height: 0;
+        display: block;
+        overflow: hidden;
+        transition: 0.9s;
+        background-color: #eeeeee;
+        opacity: 1;
+        width: 100%;
+
+    }
+
+    .nav-links.active{ 
+        height: 350px;
+        /* padding-bottom: 50px; */
+        
+    }
+    .nav-links ul {
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 50px auto 0 auto;
+        opacity: 0;
+    }
+    
+    .nav-links.active ul{
+        opacity: 1;
+    }
+
+    .nav-links.active .nav-button { 
+        opacity: 1;
+    }
+    .nav-links ul li {
+        margin-bottom: 15px;
+    }
+    .nav-links ul li a {
+        color: #494343;
+    }
+    
+    .nav-links .active {
+        color: var(--secondary-color);
+    }
+
+    .nav-links ul li a:hover {
+        color: var(--font-color);
+    }
+
+
+    .nav-button{ 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        opacity: 0;
+    }
+
+    .nav-button a {
+        margin-right: 30px;
+    }
+
+    .nav-button a:hover {
+        border: 1px solid var(--tertiary-color);
+    }
+
+    .main-page-con {
+        flex-direction: column-reverse;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .image-con {
+        width: 100%;
+        height: auto;
+        display: flex;
+        min-height: 550px;
+    }
+    
+
+    .content {
+        width: 100%;
+        padding: 50px;
+        position: absolute;
+        margin: auto;
+    }
+
+    .welcome {
+        font-size: 80px;
+        color: #ffffff;
+    }
+    
+    .content p {
+        color: #ffffff;
+    }
+
+    .about-us {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .about-us-img {
+        width: 100%;
+    }
+
+    .about-us-img img{
+        width: 100%;
+        height: 100%;
+        min-height: auto;
+    }
+
+    .about-us-description {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -100px;
+        width: 90%;
+    }
+
+    .mission-vission-values {
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 50px;
+    }
+
+    .main-box {
+        width: 100%;
+    }
+
+    .our-plans {
+        padding: 50px;
+    }
+
+    .our-plan-container {
+        flex-direction: column;
+    }
+    .our-plan {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .other-plans {
+        flex-direction: column;
+    }
+    
+    .other-plan {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .other-plans-2 {
+        margin-top: 0;
+    }
+
+    .our-team {
+        width: 47%;
+    }
+
+    .email-img {
+        width: 100%;
+    }
+
+    .email-img img {
+        height: 60vh;
+    }
+
+    .email-us-form-con {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .email-us-details-con {
+        width: 100%;
+    }
+  
+    .email-us-details-con .email-us-tagline {
+        font-size: 40px;
+    }
+  
+    .email-us-form {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
+ 
+
+}
+
+@media only screen and (max-width:600px) {
+    .content {
+        padding: 10;
+    }
+
+    .welcome {
+        font-size:40px;
+    }
+
+    .content p {
+        font-size: 25px;
+    }
+
+    .about-us {
+        padding: 50px 15px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .regular-text {
+        font-size: 12px;
+    }
+
+    .mission-vission-values {
+        padding: 50px 15px;
+    }
+
+    .our-plans {
+        padding: 50px 15px;
+    }
+
+    .other-plan {
+        flex-direction: column;
+    }
+
+    .other-plan .our-plan-img {
+        width: 100%;
+    }
+
+    .other-plan .our-plan-content {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .our-teams {
+        padding: 50px 15px;
+    }
+
+    
+    .email-us-form-con {
+        padding: 50px 0px;
+      }
+      
+      .email-us-details-con .email-us-tagline {
+        font-size: 35px;
+      }
+      
+      .email-us-details-con .email-us-content {
+        font-size: 14px;
+      }
+      
+      #submit {
+        padding: 15px;
+      }
+
+      .email-us-form {
+        padding: 50px 15px;
+      }
+
+      .footer-con {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+
+}
+
+
+@media only screen and (max-width:500px) {
+
+    .our-team-con {
+        flex-direction: column;
+    }
+    .our-team {
+        width: 100%;
+    }
+}
