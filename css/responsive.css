@@ -17,18 +17,15 @@
 
       .email-us-form form #fname {
         height: 50px;
-        margin-bottom: -20px;
 
       }
 
       .email-us-form form #email {
         height: 50px;
-        margin-bottom: -20px;
       }
 
       .email-us-form form #message {
         height: 150px;
-        margin-bottom: -20px;
       }
 }
 
@@ -268,8 +265,8 @@
     }
 
     .email-img img {
-        height: 60vh;
-    }
+        height: 70vh;
+    } 
 
     .email-us-form-con {
         display: flex;
@@ -288,7 +285,10 @@
         width: 100%;
         margin-left: 0px;
     }
-
+    .main-container-email-us {
+        flex-direction: column;
+        height: 100%;
+    }
 
  
 
